@@ -40,7 +40,7 @@ jobs:
       - name: Check formatting
         run: test -z $(go fmt ./...)
 
-      - name: Check linting
+      - name: Check staticcheck
         run: staticcheck ./...
 
 
